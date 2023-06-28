@@ -17,9 +17,18 @@
 
 //GETELEMENTBYCLASSNAME
 
-var items=document.getElementsByClassName('list-group-item');
-for(var i=0;i<items.length;i++)
+//var items=document.getElementsByClassName('list-group-item');
+//for(var i=0;i<items.length;i++)
+//{
+//items[i].style.fontWeight='bold';
+//}
+//items[2].style.backgroundColor='green';
+
+//GETELEMENTBYTAGNAME
+var li=document.getElementsByTagName('li');
+li[1].style.fontWeight='bold';
+li[4].style.backgroundColor='green';
+for(var i=0;i<li.length;i++)
 {
-items[i].style.fontWeight='bold';
+li[i].style.fontWeight='bold';
 }
-items[2].style.backgroundColor='green';
