@@ -35,10 +35,19 @@
 
 //QUERYSELECTOR
 
-var seconditem=document.querySelector('.list-group-item:nth-child(2)');
-seconditem.style.backgroundColor ='green';
-var thirditem=document.querySelector('.list-group-item:nth-child(3)');
-thirditem.style.visibility ='hidden';
+//var seconditem=document.querySelector('.list-group-item:nth-child(2)');
+//seconditem.style.backgroundColor ='green';
+//var thirditem=document.querySelector('.list-group-item:nth-child(3)');
+//thirditem.style.visibility ='hidden';
 
 //QUERYSELECTORALL
 
+var seconditem=document.querySelectorAll('li:nth-child(2)');
+seconditem.style.color="red";
+
+var odd=document.querySelectorAll('li:nth-child(odd)');
+
+for(var i=0;i<odd.length;i++)
+{
+    odd[i].style.backgroundColor="green";
+}
