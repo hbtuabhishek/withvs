@@ -25,10 +25,20 @@
 //items[2].style.backgroundColor='green';
 
 //GETELEMENTBYTAGNAME
-var li=document.getElementsByTagName('li');
-li[1].style.fontWeight='bold';
-li[4].style.backgroundColor='green';
-for(var i=0;i<li.length;i++)
-{
-li[i].style.fontWeight='bold';
-}
+//var li=document.getElementsByTagName('li');
+//li[1].style.fontWeight='bold';
+//li[4].style.backgroundColor='green';
+//for(var i=0;i<li.length;i++)
+//{
+//li[i].style.fontWeight='bold';
+//}
+
+//QUERYSELECTOR
+
+var seconditem=document.querySelector('.list-group-item:nth-child(2)');
+seconditem.style.backgroundColor ='green';
+var thirditem=document.querySelector('.list-group-item:nth-child(3)');
+thirditem.style.visibility ='hidden';
+
+//QUERYSELECTORALL
+
